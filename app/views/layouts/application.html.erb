@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Store</title>
+		<%= stylesheet_link_tag    "application", :media => "all" %>
+		<%= javascript_include_tag "application" %>
+		<%= csrf_meta_tags %>
+	</head>
+	<body>
+		<div class="navbar">
+			<!-- <div class="navbar-inner">
+				<a class="brand" href="#">Title</a>
+				<ul class="nav">
+					<li class="active">
+						<a href="#">Home</a>
+					</li>
+					<li>
+						<a href="#">Portfolio</a>
+					</li>
+					<li>
+						<a href="#">Careers</a>
+					</li>
+					<li>
+						<a href="#">Contact Us</a>
+					</li>
+				</ul>
+			</div> -->
+			<div class="navbar navbar-fixed-top">
+  <div class="navbar-inner">
+    <div class="container">
+      <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </a>
+      <a class="brand" href="#">Some Store</a>
+      <div class="nav-collapse">
+        <ul class="nav">
+          <li><%= link_to "Browse Products", products_path %></li>
+          <li><%= link_to "Price List" %></li>
+          <li><%= link_to "Contact Us" %></li>
+          <li><%= link_to "Cart" %></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+		</div>
+		
+		
+		
+		
+
+
+
+
+		<div class="container">
+			<div class="row">
+				<div class="span6">
+					<%= yield %>
+				</div>
+				<div class="span6">
+					Galla IT develops next generation apps enabling businesses and creators to engage their audience by harnessing the power of mobile platforms. We provide – web app development, ios app development, android app development, product development, marketing data intelligence to augment product awareness, utilize user engagement and monetize.
+				</div>
+
+			</div>
+		</div>
+
+	</body>
+</html>
